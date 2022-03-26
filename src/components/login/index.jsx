@@ -9,6 +9,7 @@ const Index = props => {
     e.preventDefault();
     props.onHeader(false);
     props.login(true);
+
     history.replace("/dashboard");
   };
   return (
@@ -21,13 +22,13 @@ const Index = props => {
           <label className={styles.labels} htmlFor="email">
             Email ID or Admin Name
           </label>
-          <input className={styles.input} name="email" type="text" />
+          <input className={styles.input} id="email" name="email" type="text" required />
         </div>
         <div className={styles.inputField}>
           <label className={styles.labels} htmlFor="password">
             Password
           </label>
-          <input className={styles.input} name="password" type="password" />
+          <input className={styles.input} id="password" name="password" type="password" required />
         </div>
         <Button buttonType="primary" type="submit">
           Login

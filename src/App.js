@@ -1,9 +1,9 @@
 import { useState } from "react";
+import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 import Header from "./components/header";
 import Sidebar from "./components/sideBar";
 import Login from "./components/login";
 import Modal from "./components/modal";
-import SuccessModal from "./components/successModal";
 import Dashboard from "./pages/dashboard";
 import Profile from "./pages/profile";
 import Rides from "./pages/rides";
@@ -13,9 +13,9 @@ import Users from "./pages/users";
 import Suggestions from "./pages/suggestions";
 import Requests from "./pages/requests";
 import Payment from "./pages/payments";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Loader from "./components/loader";
 import "./App.css";
-import { Redirect } from "react-router-dom";
+
 function App() {
   const [header, setHeader] = useState(true);
   const [forgotPassword, setForgotPassword] = useState(false);
@@ -58,6 +58,7 @@ function App() {
               <Route path="/login" exact>
                 {!forgotPassword && (
                   <Login login={setLogin} onHeader={setHeader} onForgotPassword={setForgotPassword} />
+                  // <Loader />
                 )}
                 {forgotPassword && <Modal setForgotPassword={setForgotPassword} />}
               </Route>
