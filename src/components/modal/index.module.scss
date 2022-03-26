@@ -15,7 +15,15 @@
   }
   .modalBody {
     padding: 2rem 3rem;
-    color: #ffffffcc;
+    .error {
+      color: #ee1515;
+      text-transform: uppercase;
+    }
+    .content {
+      color: #ffffffcc;
+      line-height: 2rem;
+      font-size: 1rem;
+    }
     .input {
       border: 1px solid #fcb205;
       outline: none;

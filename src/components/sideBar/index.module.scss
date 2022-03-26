@@ -1,3 +1,13 @@
+%nav {
+  cursor: pointer;
+  list-style: none;
+  padding: 1rem;
+  margin: 1rem 2rem;
+  font-weight: 600;
+  padding-left: 20%;
+  border-radius: 10px;
+  color: #fff;
+}
 .sidebar {
   height: 100vh;
   width: 446px;
@@ -14,6 +24,15 @@
     cursor: pointer;
     span {
       color: #fcb205;
+    }
+  }
+  .navigationList {
+    .active {
+      @extend %nav;
+      background-color: #fcb205;
+    }
+    .item {
+      @extend %nav;
     }
   }
 }

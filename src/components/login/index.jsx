@@ -9,7 +9,7 @@ const Index = props => {
     e.preventDefault();
     props.onHeader(false);
     props.login(true);
-    history.replace("/");
+    history.replace("/dashboard");
   };
   return (
     <section className={styles.login}>
