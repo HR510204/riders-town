@@ -4,7 +4,7 @@ const index = props => {
   switch (props.buttonType) {
     case "primary":
       return (
-        <button onClick={props.onClick} className={` ${props.className} ${styles.primary}`}>
+        <button onClick={props.onClick} className={`${props.className} ${styles.primary}`}>
           {props.children}
         </button>
       );

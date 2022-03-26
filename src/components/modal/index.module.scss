@@ -19,11 +19,14 @@
     .input {
       border: 1px solid #fcb205;
       outline: none;
-      width: 100%;
+      width: 90%;
       background-color: transparent;
       color: #fcb205;
       padding: 1rem;
       font-size: 1rem;
+    }
+    .button {
+      width: 25%;
     }
   }
 }

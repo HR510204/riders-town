@@ -4,8 +4,12 @@ import Button from "../button";
 import styles from "./index.module.scss";
 const Index = props => {
   const history = useHistory();
+
   const handleForm = e => {
     e.preventDefault();
+    props.onHeader(false);
+    props.login(true);
+    history.replace("/");
   };
   return (
     <section className={styles.login}>
