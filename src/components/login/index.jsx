@@ -1,5 +1,6 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
+import Button from "../button";
 import styles from "./index.module.scss";
 const Index = props => {
   const history = useHistory();
@@ -7,7 +8,7 @@ const Index = props => {
     e.preventDefault();
   };
   return (
-    <section className={styles.modal}>
+    <section className={styles.login}>
       <h3 className={styles.heading}>
         Riders <span>Town</span>
       </h3>
@@ -24,9 +25,9 @@ const Index = props => {
           </label>
           <input className={styles.input} name="password" type="password" />
         </div>
-        <button className={styles.button} type="submit">
+        <Button buttonType="primary" type="submit">
           Login
-        </button>
+        </Button>
       </form>
       <span onClick={() => props.onForgotPassword(true)} className={styles.forgot}>
         Forgot Password ?

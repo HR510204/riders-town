@@ -1,4 +1,4 @@
-.modal {
+.login {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -39,17 +39,7 @@
       }
     }
   }
-  .button {
-    padding: 1rem;
-    border: none;
-    background-color: #fcb205cc;
-    width: 100%;
-    color: #fff;
-    font-weight: 700;
-    font-size: 1rem;
-    margin-top: 1.5rem;
-    cursor: pointer;
-  }
+
   .forgot {
     display: block;
     margin-top: 1rem;
